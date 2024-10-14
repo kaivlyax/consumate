@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.container {
+   
+}
+
+header {
+    background-color: #FF6600;
+    color: #fff;
+    padding: 24px 0;
+}
+
+header .logo h1 {
+    display: inline-block;
+    font-size: 40px;
+}
+
+header nav ul {
+    list-style-type: none;
+    margin-right:50px;
+    display:flex;
+    justify-content: flex-end;
+}
+
+header nav ul li {
+    margin-left: 100px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.hero {
+    background-image: url("https://i.ibb.co/hLVMZgp/homepage.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-content {
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 10px;
+}
+
+.cta-button {
+    background-color: #FF6600;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #333;
+}
+
+.about-section, .services-section, .contact-section {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.about-section p, .services-section .service-item p {
+    width: 70%;
+    margin: 10px auto;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 0;
+}
+.img{
+    margin-left:20px;
+}
+.imagee{
+    height:50;
+    width:35;
+    display:flex;
+    justify-content: right;
+}
+.headerimg{
+    position:absolute;
+    top:1px;
+    right: 1px;
+
+}
