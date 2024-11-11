@@ -1,112 +1,166 @@
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+/* Basic header styling */
+header {
+    background: #333;
+    padding: 20px 0;
+    color: #fff;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Left and Right Navigation */
+.header-nav ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect for header links */
+.header-nav ul li a:hover {
+    background-color: #ff9800;
+    color: #333;
+    border-radius: 5px;
+}
+
+/* Center logo styling */
+.logo {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.logo img {
+    width: 180px;
+}
+
+/* Hero Section */
+.hero {
+    background-color: #f0f0f0;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
     color: #333;
 }
 
-.container {
-   
+.hero p {
+    font-size: 1.2rem;
+    color: #666;
 }
 
-header {
-    background-color: #FF6600;
-    color: #fff;
-    padding: 24px 0;
-}
-
-header .logo h1 {
+.cta-button {
     display: inline-block;
-    font-size: 40px;
-}
-
-header nav ul {
-    list-style-type: none;
-    margin-right:50px;
-    display:flex;
-    justify-content: flex-end;
-}
-
-header nav ul li {
-    margin-left: 100px;
-}
-
-header nav ul li a {
-    color: white;
+    padding: 10px 20px;
+    background-color: #ff9800;
+    color: #fff;
+    border-radius: 5px;
     text-decoration: none;
-    font-size: 18px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
 }
 
-.hero {
-    background-image: url("https://i.ibb.co/hLVMZgp/homepage.jpg");
-    background-size: cover;
-    background-position: center;
-    height: 600px;
+.cta-button:hover {
+    background-color: #e68900;
+}
+
+/* Services Section */
+.services-section {
+    padding: 60px 0;
+}
+
+.services-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Service Section Layout */
+.service {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 40px;
+    padding: 40px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect */
+.service:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-description {
+    flex: 1;
+    padding-right: 20px;
+}
+
+.service-description h3 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.service-description p {
+    font-size: 1rem;
+    color: #666;
+}
+
+.service-logo {
+    flex-shrink: 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.hero-content {
-    color: white;
-    text-align: center;
+.service-logo img {
+    width: 250px;
+    height: auto;
 }
 
-.hero h1 {
-    font-size: 48px;
-    margin-bottom: 10px;
-}
-
-.cta-button {
-    background-color: #FF6600;
-    color: white;
-    padding: 10px 20px;
-    text-decoration: none;
-    font-size: 18px;
-    border-radius: 5px;
-}
-
-.cta-button:hover {
+/* Contact Section */
+.contact-section {
     background-color: #333;
-}
-
-.about-section, .services-section, .contact-section {
+    color: #fff;
     padding: 40px 0;
     text-align: center;
 }
 
-.about-section p, .services-section .service-item p {
-    width: 70%;
-    margin: 10px auto;
+.contact-section h2 {
+    font-size: 2rem;
+    color: #fff;
 }
 
+.contact-section p {
+    font-size: 1rem;
+    color: #ccc;
+}
+
+/* Footer */
 footer {
     background-color: #333;
-    color: white;
+    color: #fff;
+    padding: 20px 0;
     text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 0;
-}
-.img{
-    margin-left:20px;
-}
-.imagee{
-    height:50;
-    width:35;
-    display:flex;
-    justify-content: right;
-}
-.headerimg{
-    position:absolute;
-    top:1px;
-    right: 1px;
-
 }
