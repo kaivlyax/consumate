@@ -5,35 +5,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consumate</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
 </head>
 <body>
 
     <!-- Header Section -->
-    <header>
-        <div class="header-container">
-            <nav class="header-nav left-nav">
-                <ul>
-                    <li><a href="#about">About Us</a></li>
-                    <li><a href="#services">Services</a></li>
-                </ul>
-            </nav>
-            <div class="logo">
-                <a href="/index.html">
-                    <img src="Logo.PNG" alt="Consumate Logo" width="180">
-                </a>
+    <header>        
+        <header>
+            <div class="header-container">
+                <!-- Left Navigation -->
+                <nav class="header-nav left-nav">
+                    <ul>
+                        <li><a href="#about">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                    </ul>
+                </nav>
+        
+                <!-- Center Logo Section -->
+                <div class="logo">
+                    <!-- Existing Consumate Logo -->
+                    <a href="/index.html">
+                        <img src="Logo.PNG" alt="Consumate Logo" width="180">
+                    </a>
+        
+                    <!-- Additional Logo -->
+                    <a href="/index.html" class="additional-logo">
+                        <img src="https://i.ibb.co/5M1j4DV/chitkaralogo.jpg" alt="Additional Logo" width="100">
+                    </a>
+                </div>
+        
+                <!-- Right Navigation -->
+                <nav class="header-nav right-nav">
+                    <ul>
+                        <li><a href="#contact">Contact</a></li>
+                        <li><a href="#support">Support</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="header-nav right-nav">
-                <ul>
-                    <li><a href="#contact">Contact</a></li>
-                    <li><a href="#support">Support</a></li>
-                </ul>
-            </nav>
-        </div>
+        </header>
+        
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
+    <section class="hero" id="chitkara">
         <div class="hero-content">
             <h1>Welcome to Chitkara University</h1>
             <p>Delivering quality services across the Campus.</p>
@@ -47,20 +61,22 @@
             <h2>Our Services</h2>
 
             <!-- Venkeys Section (Logo on Left) -->
-            <div class="service">
+            <a href="venkeys.html" class="service-link">
+            <div class="service" id="venkeys">
                 <div class="service-description">
                     <h3>Venkeys</h3>
                     <p>Our innovative solutions are designed to streamline operations and drive business growth. With Venkeys, your business will thrive with tailored strategies and cutting-edge technologies.</p>
                 </div>
                 <div class="service-logo">
-                    <img src="venkeys-logo.png" alt="Venkeys Logo" width="250">
+                    <img src="https://images.ctfassets.net/kc2xclar6nri/1A38eA8eNg8Yvzwmh3P9sG/99994a733427c646588432a4b1ca8e6e/Venky-s_India.jpg?fit=scale&w=1320&fm=webp" alt="Venkeys Logo" width="250">
                 </div>
             </div>
 
-            <!-- The Cakerie Section (Logo on Right) -->
+            <!-- The Cakerie (Logo on Right) -->
+            <a href="cakerie.html" class="service-link">
             <div class="service">
-                <div class="service-logo">
-                    <img src="cakerie.png" alt="The Cakerie" width="250">
+                <div class="service-logo" id="cakerie">
+                    <img src="https://i.ibb.co/WyjVS4n/cake.jpg" alt="Tech Solution Logo" width="250">
                 </div>
                 <div class="service-description">
                     <h3>The Cakerie</h3>
@@ -69,20 +85,22 @@
             </div>
 
             <!-- Juice N Bar (Logo on Left) -->
-            <div class="service">
+            <a href="juicebar.html" class="service-link">
+            <div class="service"  id="juice">
                 <div class="service-description">
                     <h3>Juice N Bar</h3>
                     <p>Your trusted online marketplace for a variety of quality products and services. Whether you are a buyer or seller, our platform connects you with the right products and services with ease.</p>
                 </div>
                 <div class="service-logo">
-                    <img src="juice-n-bar.png" alt="Juice N Bar" width="250">
+                    <img src="https://i.ibb.co/6YZpSdW/Screenshot-20240930-205828-u-Campus.jpg" alt="Marketplace Logo" width="250">
                 </div>
             </div>
 
             <!-- Resto-U Section (Logo on Right) -->
-            <div class="service">
+            <a href="restou.html" class="service-link">
+            <div class="service" id="resto-u">
                 <div class="service-logo">
-                    <img src="resto-u-logo.png" alt="Resto-U Logo" width="250">
+                    <img src="https://i.ibb.co/qY0DWvs/restou.jpg" alt="Resto-U Logo" width="250">
                 </div>
                 <div class="service-description">
                     <h3>Resto-U</h3>
@@ -90,21 +108,23 @@
                 </div>
             </div>
 
-            <!-- Baskin Robin Section (Logo on Left) -->
-            <div class="service">
+            <!-- Baskin Robin (Logo on Left) -->
+            <a href="baskinrobin.html" class="service-link">
+            <div class="service" id="baskin">
                 <div class="service-description">
                     <h3>Baskin Robin</h3>
-                    <p>br offers expert design services to elevate your brand's visual identity. From logos to full branding strategies, our team brings your creative vision to life.</p>
+                    <p>Baskin Robin offers expert design services to elevate your brand's visual identity. From logos to full branding strategies, our team brings your creative vision to life.</p>
                 </div>
                 <div class="service-logo">
-                    <img src="Baskin-robin.png" alt="Baskin Robin" width="250">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBKr93cnXq8OcztjJt84bX11UZFF7T2Y77tA&s" alt="Design Pro Logo" width="250">
                 </div>
             </div>
 
             <!-- Chai Nagri Section (Logo on Right) -->
+            <a href="chainagri.html" class="service-link">
             <div class="service">
-                <div class="service-logo">
-                    <img src="chai-nagri-logo.png" alt="Chai Nagri Logo" width="250">
+                <div class="service-logo" id="chai-nagri">
+                    <img src="https://media.licdn.com/dms/image/v2/C4E0BAQFBLXrhN3w5mA/company-logo_200_200/company-logo_200_200/0/1630619864700/chai_nagri_logo?e=2147483647&v=beta&t=jcTdXzD1cEMxTfsmbfFL5dM3VBeuKR6MNtNPyGPoO2c" alt="Chai Nagri Logo" width="250">
                 </div>
                 <div class="service-description">
                     <h3>Chai Nagri</h3>
@@ -119,17 +139,16 @@
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Contact Us</h2>
-            <p>Email: singhkaivlya@gmail.com | Phone: +123-456-7890</p>
+            <p>Email: helpdeskconsumate@icloud.com | Phone: +123-456-7890</p>
         </div>
     </section>
 
     <!-- Footer Section -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Company Name. All rights reserved.</p>
+            <p>&copy; 2024 Consumate. All rights reserved.</p>
         </div>
     </footer>
 
 </body>
 </html>
-
