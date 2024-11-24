@@ -52,7 +52,7 @@ header {
 /* Hero Section */
 .hero {
     background-color: #f0f0f0;
-    padding: 60px 0;
+    padding: 150px 0;
     text-align: center;
 }
 
@@ -164,3 +164,41 @@ footer {
     padding: 20px 0;
     text-align: center;
 }
+#chitkara{
+    background-image:url(https://theacademicinsights.com/wp-content/uploads/2021/07/Chitkara-University-Institute-of-Engineering-Technology-CUIET.jpg);
+    background-size:auto;
+    background-position:center;
+}
+/* Center logo styling */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 20px; 
+}
+
+.logo img {
+    width: auto;
+    height: 80px; 
+}
+
+.additional-logo img {
+    width: auto;
+    height: 80px;
+}
+/* Remove underline for links and make them block-level */
+.service-link {
+    text-decoration: none;
+    display: block; /* Ensures the entire service box is clickable */
+}
+
+/* Preserve hover effects on service boxes */
+.service:hover {
+    transform: scale(1.03);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Optional: Add a pointer cursor for better UX */
+.service-link:hover {
+    cursor: pointer;
+}
+
