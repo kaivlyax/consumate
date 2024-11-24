@@ -31,7 +31,6 @@ header {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Hover effect for header links */
 .header-nav ul li a:hover {
     background-color: #ff9800;
     color: #333;
@@ -40,13 +39,14 @@ header {
 
 /* Center logo styling */
 .logo {
-    flex-grow: 1;
+    flex-grow: 2;
     display: flex;
     justify-content: center;
 }
 
 .logo img {
-    width: 180px;
+    width: auto;
+    height:100px;
 }
 
 /* Hero Section */
@@ -99,8 +99,9 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
+    height:150px;
     padding: 40px;
-    background-color: #f9f9f9;
+    background-color: #f3f3e0;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -135,8 +136,8 @@ header {
 }
 
 .service-logo img {
-    width: 250px;
-    height: auto;
+    width: auto;
+    height: 150px;
 }
 
 /* Contact Section */
@@ -145,6 +146,7 @@ header {
     color: #fff;
     padding: 40px 0;
     text-align: center;
+    margin-top:20px;
 }
 
 .contact-section h2 {
@@ -178,27 +180,92 @@ footer {
 
 .logo img {
     width: auto;
-    height: 80px; 
+    height: 100px; 
 }
 
 .additional-logo img {
     width: auto;
-    height: 80px;
-}
-/* Remove underline for links and make them block-level */
-.service-link {
-    text-decoration: none;
-    display: block; /* Ensures the entire service box is clickable */
+    height: 100px;
 }
 
-/* Preserve hover effects on service boxes */
+.service-link {
+    text-decoration: none;
+    display: block; 
+}
+
+
 .service:hover {
     transform: scale(1.03);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
 }
 
-/* Optional: Add a pointer cursor for better UX */
+
 .service-link:hover {
     cursor: pointer;
+}
+/* About Us Section */
+.about-section {
+    padding: 50px 15px;
+    background-color: #f3f3e0;
+    margin-bottom:20px;
+
+}
+
+.about-section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.about-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    font-size: 1rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.about-image {
+    flex-shrink: 0;
+    text-align: center;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.name-container {
+    display: flex;
+    justify-content: center; 
+    gap: 30px;
+}
+
+.name-item {
+    text-align: center;
+}
+
+.name {
+    display: block; 
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.number {
+    display: block; 
+    font-size: 14px;
+    color: gray; 
 }
 
