@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto-U - Chitkara University</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 40px;
+        }
+
+        header p {
+            font-size: 1.2em;
+        }
+
+        nav {
+            position: sticky;
+            top: 0;
+            z-index: 200;
+            background-color: #555;
+            padding: 15px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            margin: 0 20px;
+            text-decoration: none;
+            font-size: 16px;
+            transition: 0.3s ease;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+            transform: scale(1.05);
+            transition-duration: 0.3s;
+            font-size: 18px;
+        }
+
+        .container {
+            padding: 30px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .menu-category {
+            margin-bottom: 50px;
+        }
+
+        .menu-category h2 {
+            margin-bottom: 20px;
+            color: #444;
+            border-bottom: 2px solid green;
+            border-radius: 4px;
+            display: inline-block;
+            padding-bottom: 5px;
+        }
+
+        .menu-items {
+            display: flex;
+            flex-flow: row wrap;
+            gap: 20px;
+            justify-content: left;
+        }
+
+       
+
+        .menu-item {
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            padding: 20px;
+            width: 250px;
+            cursor: pointer;
+        } 
+        
+        .menu-item:hover{
+            transform: translateY(-5px);
+            box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+            transition: 0.25s;
+        }
+
+        .menu-item h3 {
+            color: #333;
+        }
+
+        .menu-item p {
+            margin-bottom: 15px;
+            color: #666;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .order-button {
+            background-color: #28a745;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .order-button:hover {
+            background-color: #218838;
+            transform: scale(1.15);
+            transition-duration: 0.4s;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 25px 0;
+            margin-top: 40px;
+            margin: 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Resto-U</h1>
+        <p>Chitkara University's Online Food n snacks Ordering Service</p>
+    </header>
+
+    <nav>
+        <a href="#chocolate">Chocolate</a>
+        <a href="#ice-cream">Ice-Cream</a>
+        <a href="#beverages">Beverages</a>
+        <a href="#munching">Munching</a>
+        <a href="#Dairy products">Dairy Products</a>
+        <a href="#contactus">Contact us</a>
+    </nav>
+
+    <div class="container">
+
+        <div class="menu-category" id="chocolate">
+            <h2>Chocolate</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Dairy milk fruit & nut</h3>
+                    <p>chocolates</p>
+                    <p class="price">Price: ₹90</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Dairy milk silk</h3>
+                    <p>chocolates</p>
+                    <p class="price">Price: ₹85</p>
+                    <button class="order-button">add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="ice-cream">
+            <h2>Ice-Cream</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Chocolate ice-cream</h3>
+                    <p>ic</p>
+                    <p class="price">Price: ₹40</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>shahi kulfi</h3>
+                    <p>kulfi</p>
+                    <p class="price">Price: ₹50</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Maxxum fruit and nut butterscotch</h3>
+                    <p>magnum</p>
+                    <p class="price">Price: ₹40</p>
+                    <button class="order-button">add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="beverages">
+            <h2>Beverages</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Paper boat lichi juice</h3>
+                    <p>lichi</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Scream energy drink</h3>
+                    <p>carbonated</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Afghani jeera</h3>
+                    <p>drink</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="munching">
+            <h2>Munching</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Hide&seek</h3>
+                    <p>biscuit</p>
+                    <p class="price">Price: ₹30</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>lays american style cream & onion</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Lays chilli lemon</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>kurkure chilli chataka</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>taka tak chatpata masala</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>taka tak mexilla tortilla chips</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>namkeen all in one</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>kurkure red masala munch</h3>
+                    <p>chips</p>
+                    <p class="price">Price: ₹20</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>oreo biscuit</h3>
+                    <p>biscuit</p>
+                    <p class="price">Price: ₹35</p>
+                    <button class="order-button">add</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="menu-category" id="Dairy products">
+            <h2>Dairy Products</h2>
+            <div class="menu-items">
+                <div class="menu-item">
+                    <h3>Mother dairy green milk</h3>
+                    <p>milk</p>
+                    <p class="price">Price: ₹32</p>
+                    <button class="order-button">Add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Mother dairy yellow milk</h3>
+                    <p>milk</p>
+                    <p class="price">Price: ₹22</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Mother dairy curd</h3>
+                    <p>curd</p>
+                    <p class="price">Price: ₹22</p>
+                    <button class="order-button">add</button>
+                </div>
+                <div class="menu-item">
+                    <h3>Amul moti</h3>
+                    <p>amul</p>
+                    <p class="price">Price: ₹33</p>
+                    <button class="order-button">Add</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <footer>
+        <p>©️ 2024 Resto-U, Chitkara University. All rights reserved.</p>
+        <p>Contact us: <a href="mailto:resto-u@chitkara.edu.in" style="color: #ffcc00;">resto-u@chitkara.edu.in</a></p>
+    </footer>
+
+</body>
+</html>
