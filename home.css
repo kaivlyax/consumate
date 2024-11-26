@@ -271,12 +271,94 @@ footer {
     font-size: 14px;
     color: gray; 
 }
+/* Responsive Styles for Small Screens */
 @media screen and (max-width: 768px) {
-    body{
-        background-color:cyan;
+    /* General Body Adjustments */
+    body {
         font-size: 14px;
+        padding: 0;
+        margin: 0;
     }
-.nav{
-    flex-direction:column;
+
+    /* Header Section */
+    .header-container {
+        flex-direction: column; /* Stack header elements vertically */
+        align-items: center;
+        text-align: center;
+    }
+
+    .header-nav ul {
+        flex-direction: column; /* Stack navigation links vertically */
+        gap: 10px; /* Reduce gap */
+    }
+
+    .logo img {
+        height: 80px; /* Smaller logo for smaller screens */
+    }
+
+    /* Hero Section */
+    .hero {
+        padding: 80px 15px; /* Reduce padding */
+    }
+
+    .hero h1 {
+        font-size: 2rem; /* Smaller text size */
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    /* Services Section */
+    .services-section h2 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .service {
+        flex-direction: column; /* Stack elements vertically */
+        text-align: center;
+        padding: 20px;
+    }
+
+    .service-description {
+        padding-right: 0; /* Remove side padding */
+    }
+
+    .service-logo img {
+        height: 100px; /* Adjust logo size */
+    }
+
+    /* About Section */
+    .about-section {
+        padding: 30px 15px;
+    }
+
+    .about-content {
+        flex-direction: column; /* Stack about content */
+        text-align: center;
+    }
+
+    .about-text {
+        font-size: 0.9rem;
+        line-height: 1.4; /* Adjust line height */
+    }
+
+    .about-image img {
+        max-width: 300px; /* Reduce image size */
+    }
+
+    /* Contact Section */
+    .contact-section h2 {
+        font-size: 1.5rem; /* Smaller heading */
+    }
+
+    .contact-section p {
+        font-size: 0.9rem;
+    }
+
+    /* Footer Section */
+    footer {
+        font-size: 0.9rem;
+    }
 }
-}
+
