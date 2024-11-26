@@ -273,6 +273,7 @@ footer {
 }
 @media screen and (max-width: 768px) {
     body{
+        background-color:cyan;
         font-size: 14px;
     }
 .nav{
