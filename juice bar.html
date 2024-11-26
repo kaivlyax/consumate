@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+    <head><style>
+        .center {
+            width:100px;
+            height:100px;
+          }
+        body{
+            background-color: lightgrey;
+        }
+        .one{ 
+            font-family: 'Selima', sans-serif;
+            background-color:grey;
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+            border: 1px;
+            text-align: center;
+        }
+        .button{
+            color: red;
+        }
+        .hello{
+            font-size: large;
+        }
+        .line{
+            text-align: center;
+            font-size: large;
+            font-style: oblique;
+        }
+        header {
+            background-color: #343a40;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+        }
+        section {
+            padding: 40px 0;
+            text-align: center;
+        }
+        .menu-item {
+            margin-bottom: 20px;
+        }
+        .menu-item h3 {
+            color: #dc3545;
+        }
+        .outerDiv {
+           width: 1000px;
+           display: flex;
+           flex-direction: row;
+           overflow-y:scroll;
+        }
+
+        .innerDiv {
+           width: 300px;
+           height: 300px;
+           background-color: grey;
+           margin: 10px;
+        }
+        nav a {
+            color: white;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+        nav a:hover {
+            color:white; 
+            border-bottom: 2px solid red; 
+            font-weight: bold; 
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+            height:150px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: 400px;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .image-grid img:hover {
+            transform: scale(1.05); 
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+        }
+        .juice{
+            border-radius: 10px;
+            background-color:white;
+            text-align: left;
+            padding-left: 10px;
+            margin-right: 1000px;
+        }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img src="https://i.ibb.co/y4rZv68/Screenshot-20240930-205828-u-Campus.jpg" class="center" style="float:left;" >
+            <h1>Grab N Go</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="#Juice">Fresh Juice</a>
+                <a href="#Shake">Shakes</a>
+                <a href="#Lassi">Lassi</a>
+                <a href="#Panner">Panner</a>
+                <a href="#Fruits">Fruits</a>
+                <a href="#Glass">Glasses</a>
+                <a href="#Coffee">Coffee</a>
+                <a href="#Gall">Gallery</a>
+            </nav>
+        </header>
+        <h2 align="center" class="text">Grab N Go-CU Himachal</h2>
+            <section id="menu">
+                <h2>Our Menu</h2>
+                <div class="menu-item">
+                    <h3>Fresh Juice:</h3>
+                    <p>Juicy and flavorful.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Shakes</h3>
+                    <p>topped with fresh ingredients.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Lassi</h3>
+                    <p>made with love.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Freshly Cut Fruits</h3>
+                    <p>Indulge in our healthy treats.</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Panner</h3>
+                    <p>Fresh and soft</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Disposiable glass</h3>
+                    <p>Go green</p>
+                </div>
+                <div class="menu-item">
+                    <h3>Coffee</h3>
+                    <p>Brewed with love</p>
+                </div>
+            </section>
+            <input type="text" placeholder="Search.."><br>
+        <h2 class="one">Fresh Juice:</h2><br>
+        <section id="Juice">
+        <div class="juice">
+        <p> Mousambi 200ml   <br>
+            Rs49.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+        </p>
+       <br><br>
+        </div>
+        <div class="juice">
+            <p>Anar 200ml  <br>                 
+               Rs99.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+            <br><br> 
+        </div>
+        <div class="juice">
+            <p>Pineapple 200ml   <br>           
+                Rs79.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>  
+            </p>
+            <br><br>
+        </div>
+        <div class="juice">
+            <p>Mix Fruit Juice     <br>        
+                Rs.69.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+            <br><br>
+        </div>
+        <div class="juice">
+            <p>Fresh Nimbu Panni     <br>        
+                Rs.25.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Coconut Water         <br>    
+                Rs.89.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br>
+        </div></section>
+        <h2 class="one">Shakes:</h2><br>
+        <section id="Shake">
+        <div class="juice">
+            <p>Banana Shake     <br>       
+                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Papaya Shake       <br>     
+                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Rooh afza milk      <br>     
+                Rs.39.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Mango shake            <br>
+                Rs.50.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Mango Shake with ice cream      <br>
+                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Kesar badam          <br>
+                Rs.50.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br>
+        </section>
+        </div>
+        <h2 class="one">Lassi:</h2><br>
+        <section id="Lassi">
+        <div class="juice">
+            <p>Sweet Lassi 200ml      <br>
+                Rs.49.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Salt Pepper Lassi 200ml     <br>
+                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Chaas 200ml           <br>
+                Rs.39.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br>
+        </section>
+        </div>
+        <h2 class="one">Freshly Cut Fruits:</h2><br>
+        <section id="Fruits">
+        <div class="juice">
+            <p>Fruit Chaat            <br>
+                Rs.39.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Banana Per pc            <br>
+                Rs.8.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Papaya cut fruit            <br>
+                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Pineapple cut fruit            <br>
+                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Apple Half kg   <br>
+                Rs.80.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Apple cut fruit            <br>
+                Rs.65.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Anaar          <br>
+                Rs.125.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br>
+        </section> 
+        </div>
+        <h2 class="one">Paneer:</h2><br>
+        <section id="Panner">
+        <div class="juice">
+            <p>Plain Panner 100gm         <br>
+                Rs.70.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Flavoured paneer        <br>
+                Rs.69.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br>
+        </section> 
+        </div>
+        <h2 class="one">Disposable glass:</h2><br>
+        <section id="Glass">
+        <div class="juice">
+            <p>Disposable glass         <br>
+                Rs.7.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br>
+        </section>
+        </div>
+        <h2 class="one">Coffee:</h2><br>
+        <section id="Coffee">
+        <div class="juice">
+            <p>Cold coffee           <br>
+                Rs.50.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p>
+           <br><br> 
+        </div>
+        <div class="juice">
+            <p>Cold coffee with ice cream        <br>
+                Rs.70.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+            </p><br><br> 
+        </section>
+        </div>
+        <section id="Gall">
+            <h1 class="one">Gallery</h1>
+        <div class="image-grid">
+            <img src="https://i.ibb.co/p4Ptq1x/apple.jpg" alt="Image 1">
+            <img src="https://i.ibb.co/W0mZHM0/berry.jpg" alt="Image 2">
+            <img src="https://i.ibb.co/LhHWTw4/go.jpg" alt="Image 3">
+            <img src="https://i.ibb.co/B2qGRwk/coffee.jpg" alt="Image 4">
+            <img src="https://i.ibb.co/VDJZ11d/las.jpg" alt="Image 5">
+            <img src="https://i.ibb.co/Wzb3Zvp/lass.jpg" alt="Image 6">
+            <img src="https://i.ibb.co/y8zJ6sS/man.jpg" alt="Image 7">
+            <img src="https://i.ibb.co/mbWfj2X/melon.jpg" alt="Image 8">
+            <img src="https://i.ibb.co/FmSXcT3/orange.jpg" alt="Image 9">
+            <img src="https://i.ibb.co/Z6fGTpH/wamelon.jpg" alt="Image 10">
+            <img src="https://i.ibb.co/89FJ2Hn/water.jpg" alt="Image 11">
+            <img src="https://i.ibb.co/xDpKCQ8/oorange.jpg" alt="Image 12">
+            </div>
+            </section>
+            <br><br>
+            </body>
+</html>

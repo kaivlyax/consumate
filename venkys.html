@@ -1,0 +1,347 @@
+<html>
+    <head><style>
+          header {
+            background-color:rgba(76,76,76,255);
+            color:rgb (255, 215, 0);
+            padding: 20px 0;
+            text-align: center;
+        }
+        nav a {
+            color: #bc9341;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s ease, border-bottom 0.3s ease;
+        }
+        nav a:hover {
+            color: #ffeb3b; 
+            border-bottom: 2px solid #ffeb3b; 
+            font-weight: bold; 
+        }
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 10px;
+        }
+        .image-grid img {
+            width: 100%;
+            height: auto;
+            object-fit: cover;
+            border-radius: 8px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+        }
+        .image-grid img:hover {
+            transform: scale(1.05); 
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+        }
+        .one{
+            font-family: 'Selima', sans-serif;
+            background-color:#0461ba;
+            color:rgb(255, 255, 255);
+            border-radius: 5px;
+            border: 1px;
+            text-align: center;
+        }
+        .contact-form {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #28a745;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .ice{
+            border-radius: 10px;
+            background-color:#eaac34;
+            text-align: left;
+            padding-left: 10px;
+            margin-right: 1000px;
+        }
+        .button{
+            color: red;
+        }
+        .heading{
+            color: #ccc;
+        }
+        .two{
+            font-family: 'Selima', sans-serif;
+            border-radius: 5px;
+            border: 1px;
+            background-color:#0461ba;
+            color:rgb(255, 255, 255);
+            text-align: center;
+        }
+        body{
+            background-image:url(main_back.jpg) ;
+        }
+        .background-image {
+        width: 940px;
+        height: 640px;
+        }
+    </style></head>
+    <body>
+        <header>
+            <img src="https://i.ibb.co/19dQRms/logo.png"  class="center" style="float:left;" >
+            <h1 class="heading">Venky's</h1>
+            <nav>
+                <a href="#menu">Menu</a>
+                <a href="#contact">Contact</a>
+                <a href="#non">Non-Veg Burgers</a>
+                <a href="#Veg">Veg Burgers</a>
+                <a href="#Cone">Warps</a>
+                <a href="#Sundae">Heat& Serve</a>
+                <a href="#Cake">Main Course</a>
+                <a href="#Cookies">Beverages</a>
+                <a href="#add">AddOns</a>
+                <a href="#combo">Combos</a>
+                <a href="#Gall">Gallery</a>
+            </nav>
+        </header>
+        <section id="menu">
+            <h2 class="one">Our Menu</h2>
+            <div class="menu-item">
+                <h3>Non-Veg Burgers</h3>
+                <p>...........</p>
+            </div>
+            <div class="menu-item">
+                <h3>Veg Burgers</h3>
+                <p>......</p>
+            </div>
+            <div class="menu-item">
+                <h3>Warps</h3>
+                <p>........</p>
+            </div>
+            <div class="menu-item">
+                <h3>Heat&Serve</h3>
+                <p>.......</p>
+            </div>
+            <div class="menu-item">
+                <h3>Main Course</h3>
+                <p>.....</p>
+            </div>
+            <div class="menu-item">
+                <h3>Beverages</h3>
+                <p>Refreshing</p>
+            </div>
+        </section>
+        <input type="text" placeholder="Search.."><br>
+<h2 class="one">Non-Veg Burgers:</h2><br>
+<section id="non">
+    <div class="ice" >
+        <p> Chicken Smacker Burger  <br>
+                Rs65.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+        </p>
+        <br><br>
+     </div>
+     <div class="ice">
+        <p>  Spicy Chicken Burger<br>
+                Rs95.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+        </p>
+        <br><br>
+     </div>
+     <div class="ice">
+        <p> Chicken & Cheese Burger  <br>
+                Rs149.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+        </p>
+        <br><br>
+     </div>
+     <br><br>
+     </section>
+<h2 class="one">Veg Burgers:</h2><br>
+<section id="Veg">
+    <div class="ice">
+        <p> Premium Veg Burger <br>
+            Rs75.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Double  Aloo Tikki Burger<br>
+            Rs75.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <br><br>
+    </div>
+</section>
+<h2 class="one">Warps:</h2><br>
+<section id="Cone">
+    <div class="ice">
+        <p> Aloo Tikki Warp<br>
+            Rs69.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Grilled Chicken Warp(Garlic Pepper)<br>
+            Rs85.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Grilled Chicken Warp (Tandoori) <br>
+            Rs85.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section>
+<h2 class="one">Heat&Serve:</h2><br>
+<section id="Sundae">
+    <div class="ice">
+        <p> Murg Masala <br>
+            Rs165.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Butter Chicken <br>
+            Rs195.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Butter Chicken Dhaba Style <br>
+            Rs220.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section>
+<h2 class="one">Main Course:</h2><br>
+<section id="Cake">
+    <div class="ice">
+        <p> Grilled Chicken (Tandoori) <br>
+            Rs310.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Chicken Masala With Malabar Praatha<br>
+            Rs200.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section>
+<h2 class="one">Beverages:</h2><br>
+<section id="Cookies">
+    <div class="ice">
+        <p> Mineral Water 1ltr <br>
+            Rs20.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Coca Cola 750 ml<br>
+            Rs40.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Dew 750 ml<br>
+            Rs40.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Mazaa 750 ml<br>
+            Rs40.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Sprite 750 ml<br>
+            Rs40.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section><br><br>
+<h2 class="one">Add Ons:</h2><br>
+<section id="add">
+    <div class="ice">
+        <p> Mayo Dip <br>
+            Rs9.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p>Chesse slice<br>
+            Rs15.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Extra Heating<br>
+            Rs35.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Egg<br>
+            Rs15.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+    <div class="ice">
+        <p> Malabar Paratha <br>
+            Rs20.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section><br><br>
+<h2 class="one">Comobs:</h2><br>
+<section id="combo">
+    <div class="ice">
+        <p> Aloo Tikki burger+ Fries +Loco250ml <br>
+            Rs9.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
+    </p>
+    <br><br>
+    </div>
+</section><br><br>
+<section id="Gall">
+    <h1 class="two">Gallery</h1>
+<div class="image-grid">
+    <img src="https://i.ibb.co/p0dRxM8/1.png"alt="Image 1">
+    <img src="https://i.ibb.co/2MPm1B1/2.png" alt="Image 2">
+    <img src="https://i.ibb.co/dp60H5g/3.png"  alt="Image 3">
+    <img src="https://i.ibb.co/C0jkH7M/4.png" alt="Image 4">
+    <img src="https://i.ibb.co/XXjcYyT/5.png" alt="Image 5">
+    <img src="https://i.ibb.co/gZmjP5X/6.png"  alt="Image 6">
+    <img src="https://i.ibb.co/1Tdw4Xt/7.png"  alt="Image 7">
+    <img src="https://i.ibb.co/ZhQjdkf/8.png"  alt="Image 8">
+    <img src="https://i.ibb.co/qJxSs9B/9.png"  alt="Image 9">
+    <img src="https://i.ibb.co/3W5yRTp/10.png"  alt="Image 10">
+    <img src="https://i.ibb.co/pJPtbmB/11.png"  alt="Image 11">
+    <img src="https://i.ibb.co/Fh0Fb6c/12.png" alt="Image 12">
+    <img src="https://i.ibb.co/6NpxTxj/13.png"  alt="Image 13">
+    <img src="https://i.ibb.co/42JwSZ7/14.png"  alt="Image 14">
+    <img src="https://i.ibb.co/MNxBKkq/15.png"  alt="Image 15">
+    <img src="https://i.ibb.co/xHrhm6P/16.png" alt="Image 16">
+    <img src="https://i.ibb.co/WHQyqqj/b.png" alt="Image 19">
+    <img src="https://i.ibb.co/FDcc5v8/c.png"  alt="Image 20">
+    <img src="https://i.ibb.co/ZKBKjKT/17.png"alt="Image 17">
+    <img src="https://i.ibb.co/vzCQmRw/a.png"  alt="Image 18">
+</div></section>
+<br><br>
+<h2 class="one">Contact Us</h2>
+<section class="contact-form" id="contact">
+    <h2>Contact Us</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required><br>
+        <input type="email" placeholder="Your Email" required><br>
+        <textarea rows="5" placeholder="Your Message" required></textarea><br>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+    </body>
+</html>
