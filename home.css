@@ -271,4 +271,11 @@ footer {
     font-size: 14px;
     color: gray; 
 }
-
+@media screen and (max-width: 768px) {
+    body{
+        font-size: 14px;
+    }
+.nav{
+    flex-direction:column;
+}
+}
