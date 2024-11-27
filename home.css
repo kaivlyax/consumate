@@ -1,7 +1,9 @@
 /* Basic header styling */
-*{
-    scroll-behavior:smooth;
+* {
+    scroll-behavior: smooth;
+    text-decoration: none;
 }
+
 header {
     background: #333;
     padding: 20px 0;
@@ -36,8 +38,13 @@ header {
 
 .header-nav ul li a:hover {
     background-color: #ff9800;
-    color: #333;
+    color: #fff;
     border-radius: 5px;
+}
+#chitkara{
+    background-image:url(https://theacademicinsights.com/wp-content/uploads/2021/07/Chitkara-University-Institute-of-Engineering-Technology-CUIET.jpg);
+    background-size:auto;
+    background-position:center;
 }
 
 /* Center logo styling */
@@ -49,7 +56,7 @@ header {
 
 .logo img {
     width: auto;
-    height:100px;
+    height: 100px;
 }
 
 /* Hero Section */
@@ -66,7 +73,7 @@ header {
 
 .hero p {
     font-size: 1.2rem;
-    color: white;
+    color: #666;
 }
 
 .cta-button {
@@ -102,9 +109,8 @@ header {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 40px;
-    height:150px;
     padding: 40px;
-    background-color: #f3f3e0;
+    background-color: #F1F0E8;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -149,7 +155,7 @@ header {
     color: #fff;
     padding: 40px 0;
     text-align: center;
-    margin-top:20px;
+    margin-top: 20px;
 }
 
 .contact-section h2 {
@@ -168,43 +174,6 @@ footer {
     color: #fff;
     padding: 20px 0;
     text-align: center;
-}
-#chitkara{
-    background-image:url(https://theacademicinsights.com/wp-content/uploads/2021/07/Chitkara-University-Institute-of-Engineering-Technology-CUIET.jpg);
-    background-size:auto;
-    background-position:center;
-}
-/* Center logo styling */
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 20px; 
-}
-
-.logo img {
-    width: auto;
-    height: 100px; 
-}
-
-.additional-logo img {
-    width: auto;
-    height: 100px;
-}
-
-.service-link {
-    text-decoration: none;
-    display: block; 
-}
-
-
-.service:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-}
-
-
-.service-link:hover {
-    cursor: pointer;
 }
 /* About Us Section */
 .about-section {
@@ -271,9 +240,9 @@ footer {
     font-size: 14px;
     color: gray; 
 }
+
 /* Responsive Styles for Small Screens */
 @media screen and (max-width: 768px) {
-    /* General Body Adjustments */
     body {
         font-size: 14px;
         padding: 0;
@@ -282,27 +251,27 @@ footer {
 
     /* Header Section */
     .header-container {
-        flex-direction: column; /* Stack header elements vertically */
+        flex-direction: row;
         align-items: center;
         text-align: center;
     }
 
     .header-nav ul {
-        flex-direction: column; /* Stack navigation links vertically */
-        gap: 10px; /* Reduce gap */
+        flex-direction: column;
+        gap: 10px;
     }
 
     .logo img {
-        height: 80px; /* Smaller logo for smaller screens */
+        height: 80px;
     }
 
     /* Hero Section */
     .hero {
-        padding: 80px 15px; /* Reduce padding */
+        padding: 80px 15px;
     }
 
     .hero h1 {
-        font-size: 2rem; /* Smaller text size */
+        font-size: 2rem;
     }
 
     .hero p {
@@ -311,21 +280,43 @@ footer {
 
     /* Services Section */
     .services-section h2 {
-        font-size: 1.5rem; /* Smaller heading */
+        font-size: 1.5rem;
+        text-align: center;
+        margin-bottom: 20px;
     }
 
     .service {
-        flex-direction: column; /* Stack elements vertically */
-        text-align: center;
+        flex-direction: column;
+        align-items: center;
         padding: 20px;
+        gap: 10px;
+        text-align: center;
+        margin-bottom: 20px;
+        box-sizing: border-box;
     }
 
-    .service-description {
-        padding-right: 0; /* Remove side padding */
+    .service-logo {
+        margin-bottom: 10px;
     }
 
     .service-logo img {
-        height: 100px; /* Adjust logo size */
+        height: 80px;
+        width: auto;
+    }
+
+    .service-description {
+        padding: 0;
+        text-align: center;
+    }
+
+    .service-description h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+    }
+
+    .service-description p {
+        font-size: 1rem;
+        line-height: 1.4;
     }
 
     /* About Section */
@@ -334,22 +325,22 @@ footer {
     }
 
     .about-content {
-        flex-direction: column; /* Stack about content */
+        flex-direction: column;
         text-align: center;
     }
 
     .about-text {
         font-size: 0.9rem;
-        line-height: 1.4; /* Adjust line height */
+        line-height: 1.4;
     }
 
     .about-image img {
-        max-width: 300px; /* Reduce image size */
+        max-width: 300px;
     }
 
     /* Contact Section */
     .contact-section h2 {
-        font-size: 1.5rem; /* Smaller heading */
+        font-size: 1.5rem;
     }
 
     .contact-section p {
@@ -361,4 +352,3 @@ footer {
         font-size: 0.9rem;
     }
 }
-
