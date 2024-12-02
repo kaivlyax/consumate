@@ -337,6 +337,61 @@ footer {
     .about-image img {
         max-width: 300px;
     }
+    /* get in touch section */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.contactus-section {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f9f9f9;
+}
+
+.section-title {
+  font-size: 2em;
+  margin-bottom: 20px;
+  color: #333;
+  border-bottom: 2px solid #ff6f00;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.contactus-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.contactus-details {
+  max-width: 400px;
+  text-align: left;
+}
+
+.contactus-details h2 {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  color: #ff6f00;
+}
+
+.contactus-details p {
+  margin: 5px 0 15px;
+  line-height: 1.5;
+  color: #555;
+}
+
+.contactus-details a {
+  color: #ff6f00;
+  text-decoration: none;
+}
+
+.map-container iframe {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
     /* Contact Section */
     .contact-section h2 {
