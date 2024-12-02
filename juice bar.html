@@ -1,343 +1,347 @@
 <!DOCTYPE html>
-    <head><style>
-        *{
-            scroll-behaviour:smooth;
-        }
-        .center {
-            width:100px;
-            height:100px;
-          }
-        body{
-            background-color: lightgrey;
-        }
-        .one{ 
-            font-family: 'Selima', sans-serif;
-            background-color:grey;
-            color:rgb(255, 255, 255);
-            border-radius: 5px;
-            border: 1px;
-            text-align: center;
-        }
-        .button{
-            color: red;
-        }
-        .hello{
-            font-size: large;
-        }
-        .line{
-            text-align: center;
-            font-size: large;
-            font-style: oblique;
-        }
-        header {
-            background-color: #343a40;
-            color: white;
-            padding: 20px 0;
-            text-align: center;
-        }
-        section {
-            padding: 40px 0;
-            text-align: center;
-        }
-        .menu-item {
-            margin-bottom: 20px;
-        }
-        .menu-item h3 {
-            color: #dc3545;
-        }
-        .outerDiv {
-           width: 1000px;
-           display: flex;
-           flex-direction: row;
-           overflow-y:scroll;
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juices & Shakes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: whitesmoke;
+            color: #333;
         }
 
-        .innerDiv {
-           width: 300px;
-           height: 300px;
-           background-color: grey;
-           margin: 10px;
+        /* Header */
+        header {
+            background-color: rgb(21, 83, 0);
+            color: rgb(251, 110, 59);
+            text-align: center;
+            padding: 50px 20px;
+            border-radius: 0;
+        }
+        header h1 {
+            font-size: 3rem;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            
+        }
+        header p {
+            font-size: 1.2rem;
+            margin-top: 10px;
+        }
+
+        /* Navigation */
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            background-color: #FFFBEA;
+            padding: 10px 0;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 0 0 15px 15px;
+            border-bottom:#FF6F61 2px solid;
         }
         nav a {
-            color: white;
-            margin: 0 15px;
             text-decoration: none;
-            transition: color 0.3s ease, border-bottom 0.3s ease;
+            color: #FF6F61;
+            font-size: 1rem;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 20px;
+            transition: background-color 0.3s, color 0.3s;
         }
         nav a:hover {
-            color:white; 
-            border-bottom: 2px solid red; 
-            font-weight: bold; 
+            background-color: #FF6F61;
+            color: white;
         }
-        .image-grid {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-            height:150px;
+
+        /* Container */
+        .container {
+            padding: 40px 15px;
+            max-width: 2100px;
+            margin: auto;
         }
-        .image-grid img {
+
+        /* Section Titles */
+        h2 {
+            color: #FF6F61;
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        /* Card Grid */
+        .card-container {
+        display: flex;
+        flex-direction: row; /* Change to row */
+        overflow-x: scroll; /* Allow horizontal scrolling if needed */
+        gap: 20px; /* Space between cards */
+        padding: 20px; /* Optional: Add padding around the container */
+    }
+
+        /* Cards */
+        .card {
+            background-color: #FF6F61;
+            border-radius: 15px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+        }
+        .card img {
             width: 100%;
-            height: 400px;
+            height: 200px;
             object-fit: cover;
-            border-radius: 8px;
-            transition: transform 0.3s ease, box-shadow 0.3s ease; 
         }
-        .image-grid img:hover {
-            transform: scale(1.05); 
-            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.3); 
+        .card-content {
+            padding: 20px;
+            text-align: center;
         }
-        .juice{
-            border-radius: 10px;
-            background-color:white;
-            text-align: left;
-            padding-left: 10px;
-            margin-right: 1000px;
+        .card-content h3 {
+            margin: 0;
+            font-size: 1.5rem;
+            color: wheat;
         }
-        </style>
-    </head>
-    <body>
-        <header>
-            <img src="https://i.ibb.co/y4rZv68/Screenshot-20240930-205828-u-Campus.jpg" class="center" style="float:left;" >
-            <h1>Grab N Go</h1>
-            <nav>
-                <a href="#menu">Menu</a>
-                <a href="#contact">Contact</a>
-                <a href="#Juice">Fresh Juice</a>
-                <a href="#Shake">Shakes</a>
-                <a href="#Lassi">Lassi</a>
-                <a href="#Panner">Panner</a>
-                <a href="#Fruits">Fruits</a>
-                <a href="#Glass">Glasses</a>
-                <a href="#Coffee">Coffee</a>
-                <a href="#Gall">Gallery</a>
-            </nav>
-        </header>
-        <h2 align="center" class="text">Grab N Go-CU Himachal</h2>
-            <section id="menu">
-                <h2>Our Menu</h2>
-                <div class="menu-item">
-                    <h3>Fresh Juice:</h3>
-                    <p>Juicy and flavorful.</p>
+        .card-content p {
+            margin: 10px 0 0;
+            font-size: 1rem;
+            color: white;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #FAF8F0;
+            color: #666;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+            font-size: 0.9rem;
+            border-top: 2px solid #FF6F61;
+            border-top-left-radius:15px ;
+            border-top-right-radius: 15px;
+        }
+        footer a {
+            color: #FF6F61;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        footer a:hover {
+            color: #A4C639;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Juices & Shakes</h1>
+        <p>Freshly Made. Naturally Delicious.</p>
+    </header>
+    <nav>
+        <a href="#juices">Juices</a>
+        <a href="#shakes">Shakes</a>
+        <a href="#coffee">Coffee</a>
+        <a href="#lassi">Lassi</a>
+        <a href="#fruits">Fruits</a>
+        <a href="#paneer">Paneer</a>
+        <a href="#contact">Contact</a>
+    </nav>
+    <div class="container">
+        <section id="juices">
+            <h2>Juices</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Orange Juice">
+                    <div class="card-content">
+                        <h3>Orange Juice</h3>
+                        <p>Freshly squeezed orange juice, rich in Vitamin C. Perfect for a refreshing start to your day!</p>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h3>Shakes</h3>
-                    <p>topped with fresh ingredients.</p>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Apple Juice">
+                    <div class="card-content">
+                        <h3>Apple Juice</h3>
+                        <p>Sweet and crisp apple juice made from organic apples for a naturally delicious experience.</p>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h3>Lassi</h3>
-                    <p>made with love.</p>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Apple Juice">
+                    <div class="card-content">
+                        <h3>Pineapple</h3>
+                        <p>Sweet and crisp juice made from organic pineapples for a naturally delicious experience.</p>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h3>Freshly Cut Fruits</h3>
-                    <p>Indulge in our healthy treats.</p>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Apple Juice">
+                    <div class="card-content">
+                        <h3>fresh nimbu paani</h3>
+                        <p>Sweet and crisp drink made from organic limes for a naturally delicious experience.</p>
+                    </div>
                 </div>
-                <div class="menu-item">
-                    <h3>Panner</h3>
-                    <p>Fresh and soft</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Disposiable glass</h3>
-                    <p>Go green</p>
-                </div>
-                <div class="menu-item">
-                    <h3>Coffee</h3>
-                    <p>Brewed with love</p>
-                </div>
-            </section>
-            <input type="text" placeholder="Search.."><br>
-        <h2 class="one">Fresh Juice:</h2><br>
-        <section id="Juice">
-        <div class="juice">
-        <p> Mousambi 200ml   <br>
-            Rs49.00      &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-        </p>
-       <br><br>
-        </div>
-        <div class="juice">
-            <p>Anar 200ml  <br>                 
-               Rs99.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-            <br><br> 
-        </div>
-        <div class="juice">
-            <p>Pineapple 200ml   <br>           
-                Rs79.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>  
-            </p>
-            <br><br>
-        </div>
-        <div class="juice">
-            <p>Mix Fruit Juice     <br>        
-                Rs.69.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-            <br><br>
-        </div>
-        <div class="juice">
-            <p>Fresh Nimbu Panni     <br>        
-                Rs.25.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Coconut Water         <br>    
-                Rs.89.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br>
-        </div></section>
-        <h2 class="one">Shakes:</h2><br>
-        <section id="Shake">
-        <div class="juice">
-            <p>Banana Shake     <br>       
-                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Papaya Shake       <br>     
-                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Rooh afza milk      <br>     
-                Rs.39.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Mango shake            <br>
-                Rs.50.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Mango Shake with ice cream      <br>
-                Rs.59.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Kesar badam          <br>
-                Rs.50.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br>
-        </section>
-        </div>
-        <h2 class="one">Lassi:</h2><br>
-        <section id="Lassi">
-        <div class="juice">
-            <p>Sweet Lassi 200ml      <br>
-                Rs.49.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Salt Pepper Lassi 200ml     <br>
-                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Chaas 200ml           <br>
-                Rs.39.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br>
-        </section>
-        </div>
-        <h2 class="one">Freshly Cut Fruits:</h2><br>
-        <section id="Fruits">
-        <div class="juice">
-            <p>Fruit Chaat            <br>
-                Rs.39.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Banana Per pc            <br>
-                Rs.8.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Papaya cut fruit            <br>
-                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Pineapple cut fruit            <br>
-                Rs.49.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Apple Half kg   <br>
-                Rs.80.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Apple cut fruit            <br>
-                Rs.65.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Anaar          <br>
-                Rs.125.00  &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br>
-        </section> 
-        </div>
-        <h2 class="one">Paneer:</h2><br>
-        <section id="Panner">
-        <div class="juice">
-            <p>Plain Panner 100gm         <br>
-                Rs.70.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Flavoured paneer        <br>
-                Rs.69.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br>
-        </section> 
-        </div>
-        <h2 class="one">Disposable glass:</h2><br>
-        <section id="Glass">
-        <div class="juice">
-            <p>Disposable glass         <br>
-                Rs.7.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br>
-        </section>
-        </div>
-        <h2 class="one">Coffee:</h2><br>
-        <section id="Coffee">
-        <div class="juice">
-            <p>Cold coffee           <br>
-                Rs.50.00   &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p>
-           <br><br> 
-        </div>
-        <div class="juice">
-            <p>Cold coffee with ice cream        <br>
-                Rs.70.00    &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp  &nbsp &nbsp &nbsp   <button type="button" class="button">Add +</button>
-            </p><br><br> 
-        </section>
-        </div>
-        <section id="Gall">
-            <h1 class="one">Gallery</h1>
-        <div class="image-grid">
-            <img src="https://i.ibb.co/p4Ptq1x/apple.jpg" alt="Image 1">
-            <img src="https://i.ibb.co/W0mZHM0/berry.jpg" alt="Image 2">
-            <img src="https://i.ibb.co/LhHWTw4/go.jpg" alt="Image 3">
-            <img src="https://i.ibb.co/B2qGRwk/coffee.jpg" alt="Image 4">
-            <img src="https://i.ibb.co/VDJZ11d/las.jpg" alt="Image 5">
-            <img src="https://i.ibb.co/Wzb3Zvp/lass.jpg" alt="Image 6">
-            <img src="https://i.ibb.co/y8zJ6sS/man.jpg" alt="Image 7">
-            <img src="https://i.ibb.co/mbWfj2X/melon.jpg" alt="Image 8">
-            <img src="https://i.ibb.co/FmSXcT3/orange.jpg" alt="Image 9">
-            <img src="https://i.ibb.co/Z6fGTpH/wamelon.jpg" alt="Image 10">
-            <img src="https://i.ibb.co/89FJ2Hn/water.jpg" alt="Image 11">
-            <img src="https://i.ibb.co/xDpKCQ8/oorange.jpg" alt="Image 12">
             </div>
-            </section>
-            <br><br>
-            </body>
+        </section>
+        <section id="shakes">
+            <h2>Shakes</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Chocolate Shake">
+                    <div class="card-content">
+                        <h3>Chocolate Shake</h3>
+                        <p>A creamy blend of rich chocolate and milk. A treat for all chocolate lovers!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Strawberry Shake">
+                    <div class="card-content">
+                        <h3>Strawberry Shake</h3>
+                        <p>Made with fresh strawberries and milk, topped with whipped cream for a perfect treat.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Strawberry Shake">
+                    <div class="card-content">
+                        <h3>Banana Shake</h3>
+                        <p>Made with fresh bananas and milk.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Strawberry Shake">
+                    <div class="card-content">
+                        <h3>kesar badam</h3>
+                        <p>Made with fresh almonds and milk.</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Strawberry Shake">
+                    <div class="card-content">
+                        <h3>Mango shake with ice cream</h3>
+                        <p>Made with fresh mangoes and milk.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="lassi">
+            <h2>Lassi</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Mango Lassi">
+                    <div class="card-content">
+                        <h3>Mango Lassi</h3>
+                        <p>A delicious blend of ripe mangoes, yogurt, and spices. A traditional and refreshing drink!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Sweet Lassi">
+                    <div class="card-content">
+                        <h3>Sweet Lassi</h3>
+                        <p>A creamy and sweet yogurt-based drink. Perfect for cooling down on a hot day!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Sweet Lassi">
+                    <div class="card-content">
+                        <h3>Salt pepper Lassi</h3>
+                        <p>A creamy and salty yogurt-based drink. Perfect for cooling down on a hot day!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Sweet Lassi">
+                    <div class="card-content">
+                        <h3>Chaas 200ml</h3>
+                        <p>A creamy and sweet yogurt-based drink. Perfect for cooling down on a hot day!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="fruits">
+            <h2>Freshly Cut Fruits</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Platter">
+                    <div class="card-content">
+                        <h3>Fruit Platter</h3>
+                        <p>A mix of seasonal fruits, freshly cut and ready to be enjoyed. Full of nutrients and flavor!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Platter">
+                    <div class="card-content">
+                        <h3>Banana per pc</h3>
+                        <p>A good pre workout! wjbenfwueibfwiebhjqjhwbjqjhwbdqjwdbqiwdjbqiwdjbqwudb2u3bd2qudbnqwb</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Platter">
+                    <div class="card-content">
+                        <h3>Guava half kg</h3>
+                        <p>A mix of seasonal fruits, freshly cut and ready to be enjoyed. Full of nutrients and flavor!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Platter">
+                    <div class="card-content">
+                        <h3>Guava cut fruit</h3>
+                        <p>A mix of seasonal fruits, freshly cut and ready to be enjoyed. Full of nutrients and flavor!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Fruit Platter">
+                    <div class="card-content">
+                        <h3>Kinnu halfkg</h3>
+                        <p>A mix of seasonal fruits, freshly cut and ready to be enjoyed. Full of nutrients and flavor!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="paneer">
+            <h2>Paneer</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Grilled Paneer">
+                    <div class="card-content">
+                        <h3>Grilled Paneer</h3>
+                        <p>Soft and flavorful grilled paneer cubes. A perfect snack to enjoy any time of the day!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="coffee">
+            <h2>Coffee</h2>
+            <div class="card-container">
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Espresso">
+                    <div class="card-content">
+                        <h3>Espresso</h3>
+                        <p>A strong and rich coffee, perfect for your morning energy boost!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Cappuccino">
+                    <div class="card-content">
+                        <h3>Cappuccino</h3>
+                        <p>A creamy coffee with a balanced blend of espresso and milk foam. A classic favorite!</p>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="https://via.placeholder.com/250" alt="Cappuccino">
+                    <div class="card-content">
+                        <h3>Cold coffee</h3>
+                        <p>A creamy coffee with a balanced blend of espresso and milk foam. A classic favorite!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <footer>
+        <p>&copy; 2024 Juices & Shakes. All rights reserved. <a href="#contact">Contact Us</a></p>
+    </footer>
+</body>
 </html>
